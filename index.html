@@ -1,0 +1,125 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400&display=swap" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="hero">
+            <img class="hero-img" src="assets/painting1_e1.png" />
+            <div class="logo"></div>
+            <div class="notice pt-serif-regular-italic">Ведуться роботи</div>
+        </div>
+        <div class="info pt-serif-regular">
+            Шановні рибалки! З вами Андрій Моховцев &mdash; виробник блешень Даіга, експерт з риболовлі, консультант. Я
+            допоможу зробити правильний вибір під ваші умови ловлі і тест спінінга. Телефонуйте
+            <a href="tel:+380667884335">+380667884335</a> або пишіть:
+            <div class="buttons">
+                <a href="viber://chat?number=%2B380667884335" title="Viber" target="_blank">
+                    <i class="fa-brands fa-viber icon"></i>
+                </a>
+                <a href="https://t.me/+380667884335" title="Telegram" target="_blank">
+                    <i class="fa-brands fa-telegram icon"></i>
+                </a>
+                <a href="https://wa.me/380667884335" title="WhatsApp" target="_blank">
+                    <i class="fa-brands fa-whatsapp icon"></i>
+                </a>
+            </div>
+        </div>
+        <style>
+            html,
+            body {
+                margin: 0;
+                padding: 0;
+                height: 100%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            a,
+            a:visited {
+                color: #423b2a;
+            }
+            body {
+                background: url(assets/bg.jpg) repeat;
+            }
+            .hero {
+                position: relative;
+                width: 90vw;
+                max-width: 880px;
+            }
+            .hero-img {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+            .logo {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 250px;
+                height: 220px;
+                background: url(assets/logo2_small.png) no-repeat;
+                background-size: contain;
+            }
+            @media screen and (max-height: 420px) {
+                .logo {
+                    top: auto;
+                    bottom: 0;
+                }
+            }
+            @media screen and (max-width: 420px) {
+                .logo {
+                    height: 40vw;
+                    width: 40vw;
+                }
+            }
+            .notice {
+                padding-block: 1em;
+                text-align: center;
+                color: #1e0e02;
+                font-size: 24px;
+            }
+            @media screen and (min-width: 550px) {
+                .notice {
+                    position: absolute;
+                    bottom: 20px;
+                    right: 40px;
+                    font-size: 32px;
+                    color: #f1e2c3;
+                    text-shadow: 0px 0px 20px #171a15;
+                }
+            }
+            .info {
+                padding: 1em;
+                width: 90vw;
+                max-width: 880px;
+                font-size: 18px;
+                box-sizing: border-box;
+            }
+            .icon {
+                font-size: 32px;
+            }
+            .buttons {
+                margin-top: 1.5em;
+                display: flex;
+                gap: 1em;
+            }
+            .pt-serif-regular {
+                font-family: "PT Serif", serif;
+                font-weight: 400;
+                font-style: normal;
+            }
+            .pt-serif-regular-italic {
+                font-family: "PT Serif", serif;
+                font-weight: 400;
+                font-style: italic;
+            }
+        </style>
+    </body>
+</html>
